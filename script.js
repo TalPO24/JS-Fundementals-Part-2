@@ -107,3 +107,27 @@ const yearUntilRetirement = function(birthYear, firstName) {
 console.log(yearUntilRetirement(1991, 'Jonas'))
 console.log(yearUntilRetirement(1950, 'Mike'))
 */
+
+//* TK-1
+const calc1 = (score1, score2, score3) => (score1 + score2 + score3) / 3
+let scoreD = calc1(44, 23, 71)
+let scoreK = calc1(65, 54, 49)
+
+console.log(scoreD, scoreK)
+
+const checkWinner = function(scoreD, scoreK) {
+    if (scoreD >= 2 * scoreK) {
+        console.log(`Dolphins wins ${scoreD}`)
+    } else if (scoreK >= 2 * scoreD) {
+        console.log(`Koalas wins ${scoreK}`)
+    } else {
+        console.log(`Nobody wins`)
+    }
+}
+checkWinner(scoreD, scoreK)
+checkWinner(567, 111)
+
+scoreD = calc1(85, 54, 41)
+scoreK = calc1(23, 34, 27)
+checkWinner(scoreD, scoreK)
+console.log(scoreD, scoreK)
