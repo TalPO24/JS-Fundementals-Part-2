@@ -109,6 +109,7 @@ console.log(yearUntilRetirement(1950, 'Mike'))
 */
 
 //* TK-1
+/*
 const calc1 = (score1, score2, score3) => (score1 + score2 + score3) / 3
 let scoreD = calc1(44, 23, 71)
 let scoreK = calc1(65, 54, 49)
@@ -131,3 +132,44 @@ scoreD = calc1(85, 54, 41)
 scoreK = calc1(23, 34, 27)
 checkWinner(scoreD, scoreK)
 console.log(scoreD, scoreK)
+*/
+
+//* INTRODUCTION TO ARRAYS
+
+const friend1 = "Michael"
+const friend2 = "Stevn"
+const friend3 = "Peter"
+
+const friends = ["Michael", "Steven", "Peter"]
+console.log(friends)
+
+const year = new Array(1991, 1994, 2008, 2020)
+console.log(friends[0])
+console.log(friends[2])
+
+console.log(friends.length)
+console.log(friends[friends.length - 1])
+
+friends[2] = 'Jay'
+console.log(friends)
+
+const firstName = "Tal"
+const tal = [firstName, "Poris", 2037 - 1996, "student", friends]
+console.log(tal)
+console.log(tal.length)
+
+//*EXERCISE
+const calcAge = function(birthyear) {
+    return 2037 - birthyear
+}
+
+const years = [1990, 1967, 2002, 2010, 2018]
+console.log(calcAge(years));
+
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length - 1])
+console.log(age1, age2, age3)
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+console.log(ages)
