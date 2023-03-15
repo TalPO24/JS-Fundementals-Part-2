@@ -211,7 +211,7 @@ if (friends.includes('Steven')) {
 */
 
 //* TK2
-
+/*
 const bills = [125, 555, 44]
 const tip1 = bills[0] >= 50 && bills[0] <= 300 ? bills[0] * 0.15 : bills[0] * 0.2
 const tip2 = bills[1] >= 50 && bills[1] <= 300 ? bills[1] * 0.15 : bills[1] * 0.2
@@ -223,3 +223,15 @@ console.log(tips)
 
 const total = [bills[0] + tip1, bills[1] + tip2, bills[2] + tip3]
 console.log(total)
+*/
+
+//* INTRODUCTION TO OBJECTS
+
+const tal = {
+    name: "tal",
+    lastName: "Poris",
+    age: 2037 - 1996,
+    job: "Student",
+    friends: ["Michael", "Peter", "Steven"]
+}
+console.log(tal)
