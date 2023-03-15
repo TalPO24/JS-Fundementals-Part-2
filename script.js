@@ -308,7 +308,7 @@ console.log(tal.getSummery())
 */
 
 //* TK-3    
-
+/*
 const mark = {
     fullName: "Mark Miller",
     weight: 78,
@@ -336,4 +336,23 @@ if (mark.bmi > john.bmi) {
     console.log(`${john.fullName}'s BMI (${john.bmi}  is higher then  ${mark.fullName}'s BMI (${mark.bmi})`)
 } else {
     console.log("their bmi is the same")
+}
+*/
+
+//* THE FOR LOOP
+
+console.log('Lifting weights repetition 1 🏋️')
+console.log('Lifting weights repetition 2 🏋️')
+console.log('Lifting weights repetition 3 🏋️')
+console.log('Lifting weights repetition 4 🏋️')
+console.log('Lifting weights repetition 5 🏋️')
+console.log('Lifting weights repetition 6 🏋️')
+console.log('Lifting weights repetition 7 🏋️')
+console.log('Lifting weights repetition 8 🏋️')
+console.log('Lifting weights repetition 9 🏋️')
+console.log('Lifting weights repetition 10 🏋️')
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️`)
 }
