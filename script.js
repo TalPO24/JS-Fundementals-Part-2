@@ -176,7 +176,7 @@ console.log(ages)
 */
 
 //* BASIC ARRAY OPERATIONS
-
+/*
 const friends = ["Michael", "Steven", "Peter"]
 
 //* ADD ELEMENTS
@@ -208,3 +208,18 @@ console.log(friends.includes(23))
 if (friends.includes('Steven')) {
     console.log(`you have a friend calld Steven`)
 }
+*/
+
+//* TK2
+
+const bills = [125, 555, 44]
+const tip1 = bills[0] >= 50 && bills[0] <= 300 ? bills[0] * 0.15 : bills[0] * 0.2
+const tip2 = bills[1] >= 50 && bills[1] <= 300 ? bills[1] * 0.15 : bills[1] * 0.2
+const tip3 = bills[2] >= 50 && bills[2] <= 300 ? bills[2] * 0.15 : bills[2] * 0.2
+
+const tips = [tip1, tip2, tip3]
+
+console.log(tips)
+
+const total = [bills[0] + tip1, bills[1] + tip2, bills[2] + tip3]
+console.log(total)
