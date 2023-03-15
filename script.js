@@ -340,7 +340,7 @@ if (mark.bmi > john.bmi) {
 */
 
 //* THE FOR LOOP
-
+/*
 console.log('Lifting weights repetition 1 🏋️')
 console.log('Lifting weights repetition 2 🏋️')
 console.log('Lifting weights repetition 3 🏋️')
@@ -352,7 +352,51 @@ console.log('Lifting weights repetition 8 🏋️')
 console.log('Lifting weights repetition 9 🏋️')
 console.log('Lifting weights repetition 10 🏋️')
 
-// for loop keeps running while condition is TRUE
+//* for loop keeps running while condition is TRUE
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️`)
+}
+*/
+
+//* LOOPING ARRAYS, BREAKING AND CONTINUING
+
+const tal = [
+    "tal",
+    "Poris",
+    2037 - 1996,
+    "Student", ["Michael", "Peter", "Steven"],
+    true
+]
+const types = []
+
+// console.log(tal[0])
+// console.log(tal[1])
+//     ...
+// console.log(tal[4])
+
+for (let i = 0; i < tal.length; i++) {
+    //Reading from tal array
+    console.log(tal[i], typeof tal[i])
+
+    //Filling types array
+    // types[i] = typeof tal[i]
+    types.push(typeof tal[i])
+}
+
+console.log(types)
+
+const years = [1991, 2007, 1969, 2020]
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+}
+console.log(ages)
+
+//* continue and brreak
+console.log("---BREAK WITH NUMBER---")
+for (let i = 0; i < tal.length; i++) {
+    if (typeof tal[i] === 'number') break
+
+    console.log(tal[i], typeof tal[i])
 }
