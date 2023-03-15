@@ -226,7 +226,7 @@ console.log(total)
 */
 
 //* INTRODUCTION TO OBJECTS
-
+/*
 const tal = {
     name: "tal",
     lastName: "Poris",
@@ -234,4 +234,35 @@ const tal = {
     job: "Student",
     friends: ["Michael", "Peter", "Steven"]
 }
+*/
+
+//* DOT VS. BRACKET NOTATION
+
+const tal = {
+    firstName: "tal",
+    lastName: "Poris",
+    age: 2037 - 1996,
+    job: "Student",
+    friends: ["Michael", "Peter", "Steven"]
+}
 console.log(tal)
+
+console.log(tal.lastName)
+console.log(tal['lastName'])
+
+const nameKey = 'Name'
+console.log(tal['first' + nameKey])
+console.log(tal['last' + nameKey])
+
+const intrestedIn = prompt('What do you want to know about Tal ? Choose between firstName, lastName, age, job, and friends')
+if (tal[intrestedIn]) {
+    console.log(tal[intrestedIn])
+} else {
+    console.log('Wrong request! Choose between firstName, lastName,age, job, and friends')
+}
+tal.location = 'Israel'
+tal['twitter'] = '@talporis'
+console.log(tal)
+
+//* CHALLENGE
+console.log(`${tal.firstName} has ${tal.friends.length} friends and his best freind is ${tal.friends[0]}`)
