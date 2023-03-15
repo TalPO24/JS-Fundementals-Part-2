@@ -359,7 +359,7 @@ for (let rep = 1; rep <= 10; rep++) {
 */
 
 //* LOOPING ARRAYS, BREAKING AND CONTINUING
-
+/*
 const tal = [
     "tal",
     "Poris",
@@ -399,4 +399,27 @@ for (let i = 0; i < tal.length; i++) {
     if (typeof tal[i] === 'number') break
 
     console.log(tal[i], typeof tal[i])
+}
+*/
+
+//* LOOPING BACKWARDS AND LOOPS IN LOOPS
+
+const tal = [
+    "tal",
+    "Poris",
+    2037 - 1996,
+    "Student", ["Michael", "Peter", "Steven"],
+    true
+]
+
+for (let i = tal.length - 1; i >= 0; i--) {
+    console.log(i, tal[i])
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------- Starting exercise ${exercise}`)
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`exercise ${exercise} lifting weights repetition ${rep}🏋️`)
+    }
 }
