@@ -237,7 +237,7 @@ const tal = {
 */
 
 //* DOT VS. BRACKET NOTATION
-
+/*
 const tal = {
     firstName: "tal",
     lastName: "Poris",
@@ -266,3 +266,41 @@ console.log(tal)
 
 //* CHALLENGE
 console.log(`${tal.firstName} has ${tal.friends.length} friends and his best freind is ${tal.friends[0]}`)
+*/
+
+//* OBJECTS METHODS
+const tal = {
+    firstName: "tal",
+    lastName: "Poris",
+    birthYear: 1996,
+    job: "Student",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicens: true,
+
+    // calcAge: function(birthYear) {
+    //     return 2037 - birthYear
+    // }
+
+    // calcAge: function() {
+    //     console.log(this)
+    //     return 2037 - this.birthYear
+    // }
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear
+        return this.age
+    },
+
+    getSummery: function() {
+        return `${this.firstName} is a ${this.calcAge()} old ${this.job} and he has ${this.hasDriversLicens ? 'a' : "no"} drivers licens`
+    }
+}
+
+console.log(tal.calcAge())
+
+console.log(tal.age)
+console.log(tal.age)
+console.log(tal.age)
+
+//* CHALLENGE
+console.log(tal.getSummery())
