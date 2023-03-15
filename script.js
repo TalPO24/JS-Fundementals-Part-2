@@ -425,7 +425,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
 }
 */
 
-//* TEH WHILE LOOP
+//* THE WHILE LOOP
 /*
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️`)
@@ -444,3 +444,20 @@ while (dice !== 6) {
     if (dice === 6) console.log('Loop is about to end ...')
 }
 */
+
+//* TK-4
+
+const calcTip = function(bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const totals = []
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i])
+    tips.push(tip)
+    totals.push(tip + bills[i])
+}
+console.log(bills, tips, totals)
