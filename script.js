@@ -269,6 +269,7 @@ console.log(`${tal.firstName} has ${tal.friends.length} friends and his best fre
 */
 
 //* OBJECTS METHODS
+/*
 const tal = {
     firstName: "tal",
     lastName: "Poris",
@@ -304,3 +305,35 @@ console.log(tal.age)
 
 //* CHALLENGE
 console.log(tal.getSummery())
+*/
+
+//* TK-3    
+
+const mark = {
+    fullName: "Mark Miller",
+    weight: 78,
+    height: 1.69,
+    calcBmi: function() {
+        this.bmi = this.weight / this.height ** 2
+        return this.bmi
+    }
+}
+const john = {
+    fullName: "John Smith",
+    weight: 92,
+    height: 1.95,
+    calcBmi: function() {
+        this.bmi = this.weight / this.height ** 2
+        return this.bmi
+    }
+}
+mark.calcBmi();
+john.calcBmi();
+console.log(mark.bmi, john.bmi)
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher then ${john.fullName}'s BMI (${john.bmi} `)
+} else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}  is higher then  ${mark.fullName}'s BMI (${mark.bmi})`)
+} else {
+    console.log("their bmi is the same")
+}
